@@ -19,6 +19,8 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
+            <button onclick="tocarRugido()">Cry</button>
+            <audio class="cry" src="${pokemon.cry}"></audio>
         </li>
     `
 }
@@ -28,6 +30,12 @@ function loadPokemonItens(offset, limit) {
         const newHtml = pokemons.map(convertPokemonToLi).join('')
         pokemonList.innerHTML += newHtml
     })
+}
+
+function tocarRugido() {
+    var cry = document.querySelector('.cry')
+    cry.volume = 0.2;
+    cry.play();
 }
 
 loadPokemonItens(offset, limit)

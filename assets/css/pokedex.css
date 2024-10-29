@@ -127,6 +127,16 @@
     height: 70px;
 }
 
+.pokemon button {
+    background-color: #eaeaea;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin: 10px 0 0 0;
+    border-radius: 1rem;
+}
+
 .pagination {
     display: flex;
     flex-direction: row;
